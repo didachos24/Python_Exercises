@@ -48,7 +48,7 @@ def solucion():
     # Si no hay cuadrados perfectos en la matriz imprime mensaje dejando saber que 
     # no se puede esperar resultado y arrojará un error
     if len(cuadrados_perfectos) == 0:
-        return print("\n \n====> No hay cuadrados perfectos en la matriz \n====> Esperar error")
+        return print("\n \n====> No hay cuadrados perfectos en la matriz \n====> Esperar error \n \n")
     else:
         return n_cuadrados_perfectos, cuadrados_perfectos
 
