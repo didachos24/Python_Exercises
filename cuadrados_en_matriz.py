@@ -57,3 +57,25 @@ resultado = solucion()
 
 # Imprime los resultados
 print(resultado[0], resultado[1])
+
+# ==========================
+
+from datetime import date
+
+#today = date.today().strftime("%m/%d/%Y")
+#print(today)
+
+
+class persona:
+    def __init__(self, cedula, nombre, DOB):
+        self.cedula = cedula
+        self.nombre = nombre
+        self.DOB = DOB
+        
+    def edad(self):
+        today = date.today().strftime("%m/%d/%Y")
+        edad = today - self.DOB
+        return edad
+        
+a = persona(1, "jairo", "05/24/1989")
+print(a.edad)
